@@ -1,24 +1,21 @@
-# README
+# LIVECODE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## To create a new rails app from zero
 
-Things you may want to cover:
+- rails new
+- cd into the folder
+- git add commit and push (to push we need to `hub create` first)
 
-* Ruby version
+after having the set up ready, we need to:
 
-* System dependencies
+1. Create the Model
 
-* Configuration
+- generate the Model
+- generate associations and validations (Tomorrow!)
+- seed! (create some examples in the database)
 
-* Database creation
+2. Create the Mantras 🕉
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Routes
+- Controller
+- View
