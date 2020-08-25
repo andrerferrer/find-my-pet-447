@@ -4,6 +4,9 @@
   <% @pets.each do |pet| %>
     <li>
       <%= link_to pet.name, pet_path(pet) %>
+      <%= link_to "💩", pet_path(pet.id), method: :delete, data: { confirm: "Are you sure?" } %>
     </li>
   <% end %>
 </ul>
+
+<%= link_to "Help us find your pet!", new_pet_path %>

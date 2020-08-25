@@ -1,2 +1,14 @@
-<h1>Pets#new</h1>
-<p>Find me in app/views/pets/new.html.erb</p>
+<%# we can create the form with  %>
+<%# form_for %>
+
+<%# OR %>
+
+<%# simple_form_for %>
+<%= simple_form_for(@pet) do |form| %>
+  <%= form.input :name %>
+  <%= form.input :address %>
+  <%= form.input :species %>
+  <%= form.input :contact %>
+  <%= form.input :photo_url %>
+  <%= form.submit %>
+<% end %>

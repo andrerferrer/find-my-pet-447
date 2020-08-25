@@ -1,2 +1,8 @@
-<h1>Pets#edit</h1>
-<p>Find me in app/views/pets/edit.html.erb</p>
+<%= simple_form_for(@pet) do |form| %>
+  <%= form.input :name %>
+  <%= form.input :address %>
+  <%= form.input :species %>
+  <%= form.input :contact %>
+  <%= form.input :photo_url %>
+  <%= form.submit %>
+<% end %>
