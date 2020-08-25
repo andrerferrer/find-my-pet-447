@@ -3,7 +3,7 @@ class CreatePets < ActiveRecord::Migration[6.0]
     create_table :pets do |t|
       t.string :name
       t.string :address
-      t.boolean :found
+      t.boolean :found, default: false
       t.string :species
       t.string :contact
 
